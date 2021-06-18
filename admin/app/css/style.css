@@ -1,0 +1,143 @@
+/*Common style page for all admin pages*/
+
+* {
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', Sans-serif;
+}
+
+body {
+	margin: 0px;
+	font-size: 16px;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 20px 8px 10px 40px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav>div {
+  width: 100%;
+}
+.sidenav>div>div{
+  padding: 20px 8px 10px 40px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a, .sidenav div {font-size: 18px;}
+}
+
+
+/* Style page content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/*---Form---*/
+.my-form {
+	margin: 30px auto;
+	border: 10px solid #d2d2d2;
+	padding: 20px 30px;
+	width: 50%;
+	font-size: 1.3em;
+	background-color: #fefefe;
+	color: #000;
+}
+
+.my-form input {
+	width: 100%;
+	height: 30px;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+.my-form select {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 15px;
+}
+.my-form input[type="submit"] {
+	margin-top: 30px;
+	height: auto;
+	font-size: 1.3em;
+}
+.my-form input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 748px) {
+	.my-form {
+		width: 90%;
+	}
+}
+
+
+
+/*.........................................................................*/
+
+
+/* On screens that are less than 680px wide, make the sidebar into a topbar */
+@media (max-width: 680px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidenav a{
+    float: left;
+    width: 20%;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .sidenav hr {
+    clear: both;
+  }
+  .sidenav>div:last-of-type>div {
+    padding-left: 20px;
+    float: left;
+    display: inline-block;
+  }
+  .sidenav>div:last-of-type>a {
+    float: right;
+    width: 30%;
+  }
+
+  div.main {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media (max-width: 450px) {
+  .sidenav a, .sidenav div, .sidenav>div:last-of-type>a{
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+
+  .my-form input[type="submit"] {
+		font-size: 0.9em;
+	}
+}

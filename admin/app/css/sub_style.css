@@ -1,0 +1,103 @@
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 25px;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, grey, #d2d2d2);
+}
+
+h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*---Form---*/
+.my-form {
+	width: 80%;
+}
+
+.my-form button {
+	margin: 15px auto 0px auto;
+	font-size: 1em;
+	height: 30px;
+	width: 100%;
+}
+
+.my-form button:hover {
+	cursor: pointer;
+}
+
+@media (min-width: 950px) {
+	.my-form {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 30px auto;
+		border: 10px solid #d2d2d2;
+		padding: 20px 30px;
+		width: 100%;
+		background-color: #fefefe;
+		color: #000;
+	}
+
+	.my-form label {
+		margin: 15px auto 0px auto;
+	}
+	.my-form select {
+		width: 35%;
+		height: 30px;
+		margin: 15px auto 0px auto;
+	}
+	.my-form button {
+		width: 35%;
+	}
+}
+
+/*--Additional table style for subjects page---*/
+/*---Subjects Table---*/
+.sub-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+    min-width: 500px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
+.sub-table thead tr {
+    background-color: #808080;
+    color: #ffffff;
+}
+.sub-table th,
+.sub-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+.sub-table tbody form {
+	margin-bottom: 0px;
+}
+.sub-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background-color: #fff;
+    color: #000;
+}
+
+.sub-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.sub-table tbody tr:last-of-type {
+    border-bottom: 2px solid #808080;
+}
+.sub-table tbody tr td:nth-of-type(3) {
+    text-align: left;
+    padding-left: 5%;
+}
+.sub-table tbody button:hover {
+	cursor: pointer;
+}
+
+#hid-row {
+	display: none;
+}

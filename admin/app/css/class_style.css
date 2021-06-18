@@ -1,0 +1,22 @@
+h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 25px;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, grey, #d2d2d2);
+}
+
+h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.my-form button {
+	margin: 15px auto 0px auto;
+	font-size: 1em;
+	height: 30px;
+	width: 100%;
+}
+.my-form button:hover {
+	cursor: pointer;
+}
