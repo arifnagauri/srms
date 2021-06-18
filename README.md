@@ -1,4 +1,4 @@
-#-----Student Management System (SMS)-----
+#Student Management System (SMS)
 
 - This is a PHP/MySQL web app project for managing students and there results.
 
