@@ -6,7 +6,8 @@
 
 - This SMS is basically for schools (upto 12th standard), however if you want to modify it for colleges/higher education SMSs, just do small changes in DB model and queries in php files accordingly.
 
------------------------------------
+**Note: ** *I have used some code snippets from some of the online forums with slight modifications, I acknowledge them whosoever's work is being used in this source code and also thanking them to help novice learner like me:)*
+--------------------------------------
 - Steps to start with project:
 
 ->Download XAMPP or MAMP or WAMP (whichever suitable) and learn how to use it (link: https://youtu.be/X0_pthMQPMM) if never used before. (suggestion: install XAMPP)
